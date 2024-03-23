@@ -1,7 +1,66 @@
-# Dak
+# 게임 캐릭터 정보 및 맵 정보 제공 웹 애플리케이션
 
-# IdeaBoom link
-https://www.ideaboom.net/project/project/view?seq=1508
+## 1. 프로젝트 개요
+### 수행 배경
+- Node.js 및 JavaScript 언어 숙달을 위한 프로젝트 진행
 
-# Powerpoint Slide
-https://www.slideshare.net/ssuser8535b41/pptx-84de
+### 수행 기간
+- 2023.11.15 ~ 2023.12.06
+
+### 개발 작품 설명
+- 게임 캐릭터 정보 및 소개 제공
+- 유저의 스테이터스 및 현재 맵 정보 제공
+
+## 2. 개발 환경
+### Server-side
+- Node.js
+- Express Framework
+- Database
+
+### Client-side  
+- HTML, CSS, JavaScript
+- Vue.js Framework
+
+## 3. 작품 설계
+### Front-end 설계
+- 사용자 UI 설계
+- Front-end Logic 설계
+
+### Back-end 설계  
+- DB 설계
+- Server-side Logic 설계
+- Service API 설계
+
+## 4. 시스템 구성
+### 시나리오
+- 회원가입 및 로그인
+- 인게임 데이터 요청
+- DB 조회
+
+### 데이터 플로우
+1. 사용자 정보를 DB 서버를 이용해 서버로 전송한다.
+2. DB에서는 정보를 클라이언트 UI를 통해 제공한다.
+3. 웹 서버에서는 API를 통해 외부 서버로부터 정보를 요청한다.
+4. UI를 통해 API를 통해 얻은 정보를 제공한다.
+5. 사용자가 DB 서버를 통해 수정된 정보로 업데이트한다.
+6. 서버는 모든 클라이언트에 수정된 정보로 새로 제공한다.
+
+### UI 설계
+#### 화면에 표시할 주요 항목
+- 사용자 정보
+ - 닉네임
+ - 승률, 대전기록 등 인게임 정보
+- 캐릭터 정보
+ - 캐릭터 소개
+ - 캐릭터 스토리
+ - 수정, 추가
+- 통계 정보
+- 실시간 맵
+
+## 5. Vue.js 프레임워크 사용 이유
+Vue.js는 가벼우며 진입 장벽이 낮고 학습 곡선이 완만한 프론트엔드 프레임워크입니다. 반응형 UI 구축에 적합하며, 컴포넌트 기반 아키텍처를 제공하여 코드 재사용성과 유지보수성이 뛰어납니다. 또한 Vue.js는 공식 라우터, 상태 관리 라이브러리를 제공하여 대규모 애플리케이션 개발에도 용이합니다.
+
+이번 프로젝트에서는 Vue.js를 사용함으로써 효율적인 개발과 높은 사용자 경험을 제공하는 반응형 웹 애플리케이션을 구축할 수 있었습니다.
+
+## 참고 링크
+- [아이디어붐] (https://www.ideaboom.net/project/project/view?seq=1508)
